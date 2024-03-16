@@ -9,7 +9,7 @@ const Splash = (Nav: NativeStackScreenProps<any, any>) => {
 
   React.useEffect(() => {
     setTimeout(() => {
-      Nav.navigation.replace(Routes.Home)
+      Nav.navigation.replace(Routes.Bottom)
     }, 1200)
   }, [])
 

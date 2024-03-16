@@ -1,6 +1,11 @@
 const Home = 'HOME';
 const Splash = 'SPLASH';
+const Order = "ORDER";
+const Support = "SUPPORT";
+const Profile = "PROFILE";
+const Bottom = "BOTTOM";
 
-const Routes = { Home, Splash };
+
+const Routes = { Order, Support, Profile, Home, Splash, Bottom };
 
 export default Routes

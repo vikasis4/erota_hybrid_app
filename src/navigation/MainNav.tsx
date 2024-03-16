@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/Home';
 import Splash from '../screens/Splash';
+import BottomNav from './BottomNav';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,7 @@ export default function MainNav() {
                 animation: 'slide_from_right'
             }}>
                 <Stack.Screen name={Routes.Splash} component={Splash} />
-                <Stack.Screen name={Routes.Home} component={Home} />
+                <Stack.Screen name={Routes.Bottom} component={BottomNav} />
             </Stack.Navigator>
         </NavigationContainer>
     );

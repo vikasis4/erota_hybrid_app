@@ -3,12 +3,12 @@ import React from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import Theme from '../theme'
 import Images from '../config/images'
-import Ani_NavBar from '../animation/Ani_NavBar'
+import Ani_Bar from '../animation/Ani_Bar'
 
 const NavBar = ({ nav }: { nav: NativeStackScreenProps<any, any> }) => {
 
     return (
-        <Ani_NavBar style={styles.outer}>
+        <Ani_Bar type="Navbar" style={styles.outer}>
             <View style={styles.main}>
                 <Text style={styles.txt}>Erota</Text>
                 <View style={styles.inner}>
@@ -20,7 +20,7 @@ const NavBar = ({ nav }: { nav: NativeStackScreenProps<any, any> }) => {
                     </TouchableOpacity>
                 </View>
             </View>
-        </Ani_NavBar>
+        </Ani_Bar>
     )
 }
 
