@@ -1,15 +1,17 @@
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
+import { StyleSheet, View, StatusBar } from 'react-native'
 import React from 'react'
 import Theme from '../theme'
 import NavBar from '../components/NavBar'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import Ani_Banner from '../animation/Ani_Banner'
 
 const Home = (Nav: NativeStackScreenProps<any, any>) => {
 
   return (
     <View style={styles.main}>
-      <StatusBar backgroundColor={Theme.colors.primary} />
+      <StatusBar barStyle="dark-content" backgroundColor={Theme.colors.primary} />
       <NavBar nav={Nav} />
+      <Ani_Banner />
     </View>
   )
 }
