@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     },
     outer: {
         height: 70,
-        paddingBottom: 20,
+        paddingVertical: 10,
         width: '100%',
         alignItems: 'center',
         backgroundColor: Theme.colors.primary,

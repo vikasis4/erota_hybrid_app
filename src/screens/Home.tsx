@@ -1,9 +1,10 @@
-import { StyleSheet, View, StatusBar } from 'react-native'
+import { StyleSheet, View, StatusBar, ScrollView } from 'react-native'
 import React from 'react'
 import Theme from '../theme'
 import NavBar from '../components/NavBar'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import Ani_Banner from '../animation/Ani_Banner'
+import ProductsList from '../components/ProductsList'
 
 const Home = (Nav: NativeStackScreenProps<any, any>) => {
 
@@ -11,7 +12,10 @@ const Home = (Nav: NativeStackScreenProps<any, any>) => {
     <View style={styles.main}>
       <StatusBar barStyle="dark-content" backgroundColor={Theme.colors.primary} />
       <NavBar nav={Nav} />
-      <Ani_Banner />
+      <ScrollView style={{ flex: 1 }}>
+        <Ani_Banner />
+        <ProductsList />
+      </ScrollView>
     </View>
   )
 }
